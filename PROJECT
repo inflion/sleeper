@@ -1,0 +1,7 @@
+domain: inflion.com
+repo: github.com/inflion/sleeper
+resources:
+- group: inflion
+  kind: Sleep
+  version: v1beta1
+version: "2"

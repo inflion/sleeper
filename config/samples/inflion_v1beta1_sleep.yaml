@@ -1,0 +1,9 @@
+apiVersion: inflion.inflion.com/v1beta1
+kind: Sleep
+metadata:
+  name: sleep-sample
+spec:
+  inversion: false
+  prideName: pride-sample
+  bedtime: 21
+  wakeup: 8

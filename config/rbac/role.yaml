@@ -1,0 +1,45 @@
+
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - inflion.inflion.com
+  resources:
+  - prides
+  verbs:
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - inflion.inflion.com
+  resources:
+  - prides/status
+  verbs:
+  - patch
+  - update
+- apiGroups:
+  - inflion.inflion.com
+  resources:
+  - sleeps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - inflion.inflion.com
+  resources:
+  - sleeps/status
+  verbs:
+  - get
+  - patch
+  - update
